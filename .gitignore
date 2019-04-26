@@ -1,0 +1,5 @@
+/pkg/windows_amd64/second.a
+/pkg/*
+/bin/*
+/.settings/*
+/.project
