@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/cmplx"
 	"math/rand"
 	"time"
 )
@@ -23,6 +24,7 @@ func main() {
 	fmt.Println("nakedReturn", c, d)
 	variableDefinition()
 	variableInitialization()
+	basicTypes()
 
 }
 
@@ -68,4 +70,22 @@ func variableInitialization() {
 	shortDeclaration := 3
 	fmt.Println(i, b)
 	fmt.Println(k, l, shortDeclaration)
+}
+
+func basicTypes() {
+	var (
+		b   bool    = true
+		i   int     = 123
+		i8  int8    = 127
+		i16 int16   = 255
+		i32 int32   = 4000000
+		i64 int64   = 999999999
+		by  byte    = 255
+		r   rune    = 4000000
+		f32 float32 = 4.33
+		f64 float64 = 6321321.333
+		cp          = cmplx.Sqrt(-5 + 12i)
+	)
+	fmt.Println(b, i, i8, i16, i32, i64, by, r, f32, f64, cp)
+
 }
