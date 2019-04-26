@@ -73,6 +73,7 @@ func variableInitialization() {
 }
 
 func basicTypes() {
+	const k = "lol"
 	var (
 		b   bool    = true
 		i   int     = 123
@@ -86,6 +87,6 @@ func basicTypes() {
 		f64 float64 = 6321321.333
 		cp          = cmplx.Sqrt(-5 + 12i)
 	)
-	fmt.Println(b, i, i8, i16, i32, i64, by, r, f32, f64, cp)
+	fmt.Println(b, i, i8, i16, i32, i64, by, r, f32, f64, cp, k)
 
 }
