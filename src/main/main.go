@@ -22,6 +22,7 @@ func main() {
 	c, d := nakedReturn(5)
 	fmt.Println("nakedReturn", c, d)
 	variableDefinition()
+	variableInitialization()
 
 }
 
@@ -59,4 +60,12 @@ func nakedReturn(sum int) (x, y int) {
 func variableDefinition() {
 	var funcVariable bool
 	fmt.Println(packageVariable, funcVariable)
+}
+
+func variableInitialization() {
+	var i, b = false, "lol"
+	var k, l int = 1, 2
+	shortDeclaration := 3
+	fmt.Println(i, b)
+	fmt.Println(k, l, shortDeclaration)
 }
