@@ -26,6 +26,7 @@ func main() {
 	variableInitialization()
 	basicTypes()
 	conversions()
+	extfunc()
 
 }
 
