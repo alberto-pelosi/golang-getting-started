@@ -25,6 +25,7 @@ func main() {
 	variableDefinition()
 	variableInitialization()
 	basicTypes()
+	conversions()
 
 }
 
@@ -89,4 +90,13 @@ func basicTypes() {
 	)
 	fmt.Println(b, i, i8, i16, i32, i64, by, r, f32, f64, cp, k)
 
+}
+
+func conversions() {
+
+	var x, y = 3, 4
+	//var f float64 = math.Sqrt(x*x + y*y)
+	var ff float64 = math.Sqrt(float64(x*x + y*y))
+	var uf uint = uint(ff)
+	fmt.Println(ff, uf)
 }
