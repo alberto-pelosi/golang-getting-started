@@ -2,6 +2,7 @@ package otherpack
 
 import (
 	"fmt"
+	"runtime"
 )
 
 func Extpackfunc() {
@@ -16,6 +17,7 @@ func Extpackcaller() {
 	ifstatement2()
 	ifstatement3()
 	sqrt(2)
+	switchstatement()
 }
 
 func forloop() {
@@ -68,6 +70,7 @@ func ifstatement3() {
 	}
 }
 
+//square root with for loop
 func sqrt(x float64) float64 {
 	z := float64(1)
 	i := 0
@@ -77,4 +80,15 @@ func sqrt(x float64) float64 {
 		fmt.Printf("iteration %d, z is equals to %f \n", i, z)
 	}
 	return z
+}
+
+//no need of break
+func switchstatement() {
+
+	switch os := runtime.GOOS; os {
+	case "windows":
+		fmt.Println("case windows")
+	default:
+		fmt.Println(os)
+	}
 }
