@@ -21,6 +21,7 @@ func Extpackcaller() {
 	switchstatement()
 	switchstatement2()
 	switchstatement3()
+	deferstatement()
 }
 
 func forloop() {
@@ -123,4 +124,14 @@ func switchstatement3() {
 	default:
 		fmt.Println("Good evening.")
 	}
+}
+
+func deferstatement() {
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
 }
