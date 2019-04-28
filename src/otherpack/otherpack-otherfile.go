@@ -13,6 +13,8 @@ func Extpackcaller() {
 	forloop2()
 	forloop3()
 	ifstatement()
+	ifstatement2()
+	ifstatement3()
 }
 
 func forloop() {
@@ -46,5 +48,21 @@ func ifstatement() {
 	sum := 1
 	if sum == 1 {
 		fmt.Println("sum is equals to ", sum)
+	}
+}
+
+// if with statement before conditions
+func ifstatement2() {
+	if v := 3; v == 3 {
+		fmt.Println("v is equals to", v)
+	}
+}
+
+// v is visibile also in else statement
+func ifstatement3() {
+	if v := 3; v == 3 {
+		fmt.Println("v is equals to", v)
+	} else {
+		fmt.Println("v is equals to", v+v)
 	}
 }
