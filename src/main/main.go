@@ -29,6 +29,7 @@ func main() {
 	conversions()
 	extfunc()
 	otherpack.Extpackfunc()
+	otherpack.Extpackcaller()
 
 }
 
