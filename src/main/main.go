@@ -5,6 +5,7 @@ import (
 	"math"
 	"math/cmplx"
 	"math/rand"
+	"otherpack"
 	"time"
 )
 
@@ -27,6 +28,7 @@ func main() {
 	basicTypes()
 	conversions()
 	extfunc()
+	otherpack.Extpackfunc()
 
 }
 
