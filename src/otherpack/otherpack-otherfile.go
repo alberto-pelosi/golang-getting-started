@@ -15,6 +15,7 @@ func Extpackcaller() {
 	ifstatement()
 	ifstatement2()
 	ifstatement3()
+	sqrt(2)
 }
 
 func forloop() {
@@ -65,4 +66,15 @@ func ifstatement3() {
 	} else {
 		fmt.Println("v is equals to", v+v)
 	}
+}
+
+func sqrt(x float64) float64 {
+	z := float64(1)
+	i := 0
+	for i < 10 {
+		z -= (z*z - x) / (2 * z)
+		i++
+		fmt.Printf("iteration %d, z is equals to %f \n", i, z)
+	}
+	return z
 }
