@@ -12,6 +12,7 @@ func Extpackcaller() {
 	forloop()
 	forloop2()
 	forloop3()
+	ifstatement()
 }
 
 func forloop() {
@@ -38,4 +39,12 @@ func forloop3() {
 		sum += 1
 	}
 	fmt.Println(sum)
+}
+
+// no ()
+func ifstatement() {
+	sum := 1
+	if sum == 1 {
+		fmt.Println("sum is equals to ", sum)
+	}
 }
